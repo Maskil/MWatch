@@ -44,6 +44,8 @@ typedef struct Settings {
   String app_pass;
   String subject;
   String body;
+  String serv_uuid;
+  String chara_uuid;
 } Settings;
 
 class MWatch {

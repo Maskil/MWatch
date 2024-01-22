@@ -18,7 +18,7 @@ public:
   BLE(void);
   ~BLE(void);
 
-  bool begin(char *serv_uuid, char *chara_uuid);
+  bool begin(const char *serv_uuid, const char *chara_uuid);
   bool updateStatus();
   char* getData();
 

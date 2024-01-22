@@ -273,7 +273,7 @@ void MWatch::showBLE()
   display.setCursor(0, MENU_HEIGHT);
   display.println("BLE");
   BLE BT;
-  if (!BT.begin(settings.serv_uuid, settings.chara_uuid)) {
+  if (!BT.begin(settings.serv_uuid.c_str(), settings.chara_uuid.c_str())) {
     exit("Init failed");
     return;
   }

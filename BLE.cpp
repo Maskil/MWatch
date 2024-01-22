@@ -25,7 +25,7 @@ BLE::BLE(void) {}
 // Destructor
 BLE::~BLE(void) {}
 
-bool BLE::begin(char *serv_uuid, char *chara_uuid) {
+bool BLE::begin(const char *serv_uuid, const char *chara_uuid) {
   memset(data, 0, 64*sizeof(char));
   BLEDevice::init("MWatch");
 
@@ -49,7 +49,7 @@ bool BLE::begin(char *serv_uuid, char *chara_uuid) {
 
   // Start advertising
   pAdvertising = BLEDevice::getAdvertising();
-  pAdvertising->addServiceUUID(SERVICE_UUID);
+  pAdvertising->addServiceUUID(serv_uuid);
   pAdvertising->setScanResponse(true);
   BLEDevice::startAdvertising();
 
