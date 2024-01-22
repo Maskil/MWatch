@@ -5,6 +5,8 @@ Apperances and codes are refactored to my personal tastes. BMA foot step counter
 - you can send dumb [email](#email)
 - it can receive a simple message via BLE (i.e nRF app on Android) 
 
+![](./example.jpg)
+
 ## build
 
 after [configuration](#configurations), do `sh build.sh {serial-port}`.
@@ -33,3 +35,4 @@ send simple email which the content is fixed (or can be customized by HTTP reque
 ### BLE
 
 nothing much going on there. just put your service UUID and characteristic UUID in `BLE.cpp` and it should work.
+
