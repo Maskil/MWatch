@@ -1,4 +1,4 @@
-![image](https://github.com/Maskil/MWatch/assets/45069462/e97baf4a-67ae-4d7d-b83a-731e38b478f6)# MWatch - a variant of Watchy
+# MWatch - a variant of Watchy
 
 Apperances and codes are refactored to my personal tastes. BMA foot step counter is disabled. Here are the features:
 - fetch weather info from OpenWeather.org per hour (you can change it in `mwatch.cpp`, variable `iclock`).
